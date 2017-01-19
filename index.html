@@ -1,0 +1,96 @@
+
+<!doctype html>
+
+<head>
+    <title>Viktorija Berger Photography</title>
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Roboto:300,400,500,700,400italic" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.css">
+    <meta charset="UTF-8">
+    <meta content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width">
+    <style>
+    h1 {
+        color: #fff; font-size: 96px;
+        font-family: 'Great Vibes', 'Roboto', sans-serif;
+        line-height: 1;
+        text-shadow: 1px 2px 0 rgba(0,0,0,.1);
+    }
+    h1 span { font-size: 24px; color: rgba(255, 255, 255, .5); font-family: 'Lato', sans-serif; display: block; text-align: right; }
+    .background { background: url(background.jpg); background-size: cover; }
+    @media only screen and (max-width: 480px) {
+        h1 { text-align: center; font-size: 64px; }
+    }
+    </style>
+</head>
+<body ng-app="PhotoApp" ng-cloak>
+    <div layout="column" layout-align-gt-xs="center center" class="background" ng-class="{'layout-fill': $mdMedia('gt-sm')}">
+        <div layout="column">
+            <div>
+                <h1>Viktorija Berger <span hide-xs>Фото</span></h1>
+                <md-card md-whiteframe="16">
+                    <md-list>
+                        <md-list-item class="md-2-line" ng-href="tel:+389075692350">
+                            <md-icon class="md-primary">phone</md-icon>
+                            <div class="md-list-item-text">
+                                <h3>Мобилен</h3>
+                                <p>+389 (0) 75-692-350</p>
+                            </div>
+                        </md-list-item>
+                        <md-divider></md-divider>
+                        <md-list-item class="md-2-line" ng-href="mailto:viktorija@viktorijaberger.me">
+                            <md-icon class="md-primary">email</md-icon>
+                            <div class="md-list-item-text">
+                                <h3>Емајл</h3>
+                                <p>viktorija@viktorijaberger.me</p>
+                            </div>
+                        </md-list-item>
+                        <md-divider></md-divider>
+                        <md-list-item class="md-2-line" ng-href="https://www.google.mk/maps/@41.0294373,21.3292096,16z?hl=mk" target="_blank">
+                            <md-icon class="md-primary">location_on</md-icon>
+                            <div class="md-list-item-text">
+                                <h3>Локатиција</h3>
+                                <p>Битола, Македонија</p>
+                            </div>
+                        </md-list-item>
+                        <md-divider></md-divider>
+                        <md-list-item class="md-2-line">
+                            <md-icon class="md-primary">photo_camera</md-icon>
+                            <div class="md-list-item-text">
+                                <h3>специјализирана за</h3>
+                                <p>Портрети, фамилијарни фотографии, свадби, веридби</p>
+                            </div>
+                        </md-list-item>
+                    </md-list>
+                </md-card>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+    <script type="text/javascript">
+    angular.module('PhotoApp', ['ngMaterial'])
+    .run(function($rootScope, $mdMedia) { $rootScope.$mdMedia = $mdMedia })
+    .config(function($mdThemingProvider) {
+      $mdThemingProvider.theme('default')
+        .primaryPalette('pink')
+        .accentPalette('deep-purple');
+    });
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-79223620-1', 'auto');
+  ga('send', 'pageview');
+
+  window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+  d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+  _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+  $.src="https://v2.zopim.com/?4WhwSLnOViwHEp4lLwmhHXj6aBo36hbQ";z.t=+new Date;$.
+  type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+  </script>
+</body>

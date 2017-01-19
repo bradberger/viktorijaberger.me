@@ -1,0 +1,5 @@
+#!/bin/bash
+
+gsutil rsync -dr . gs://viktorijaberger.me
+gsutil acl ch -r -u AllUsers:R gs://viktorijaberger.me
+gsutil web set -m index.html -e 404.html gs://viktorijaberger.me
